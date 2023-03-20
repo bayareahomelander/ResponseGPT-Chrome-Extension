@@ -1,4 +1,4 @@
-# Email-Assistant-Chrome-Extension
+# ResponseGPT-Chrome-Extension
 
 The multi-language email assistant is written as a chrome extension, which has been integrated into Gmail, that utilizes the GPT-3 text-davinci-003 model for its functionalities.
 
