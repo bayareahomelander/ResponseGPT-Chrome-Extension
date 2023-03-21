@@ -8,5 +8,9 @@ ResponseGPT is tailored to match the tone of the received text, ensuring that it
 
 On top of replying, ResponseGPT is also designed to provide quick summary of a given piece of text, which includes a sentiment analysis, emotion/tone underneath (e.g. sarcasm, optimism, etc) as well as the point that the author of text is possibly trying to convey. Its commenting feature is built to provide neutral, non-biased response most of time by adjusting and testing different pairs of parameters in the API.
 
-
+**Landing page of ResponseGPT whe opened on desktop**
 ![Screenshot 2023-03-21 at 1 08 14 AM](https://user-images.githubusercontent.com/110600178/226548694-756913ea-6ef8-47cd-a5ed-a9034d7aff95.png)
+
+**Opened as a Chrome Extension/View on mobile devices**
+
+![Screenshot 2023-03-21 at 1 10 38 AM](https://user-images.githubusercontent.com/110600178/226549322-b6a24a28-b1b8-4bad-b6a1-b0425e782b19.png)
