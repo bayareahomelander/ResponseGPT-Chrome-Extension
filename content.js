@@ -1,5 +1,5 @@
 // Define API key and endpoint -> text-davinci-003
-const apiKey = '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';
+const apiKey = '';
 const endpoint = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
 
 // Email Received and Sample Response text area
@@ -18,7 +18,7 @@ async function analyzeText(text) {
     return 'Input Field is Empty'
   }
   
-  const prompt = "Write a short sentiment analysis on the given text in the same language, analyze the emotion and tone underneath. If the text is in English, identify what type of text it might be, such as a Tweet: ";
+  const prompt = "";
   const promtpWithEmail = prompt + text;
   try {
     const response = await fetch(endpoint, {
@@ -60,7 +60,7 @@ textReceived.addEventListener('input', returnOutput);
 
 // Define the generate response function
 async function generateResponse(textareaId, temperature) {
-    const instruction = 'Create a proper response based on the text given: '
+    const instruction = ""
     const text = document.getElementById(textareaId).value;
   
     try {
@@ -114,8 +114,7 @@ conservativeButton.addEventListener("click", function() {
 
 // Define function for commenting button
 async function generateComment(inputText) {
-  const instruction = 'Give your opinion based on the given text, in the same language: '
-
+  const instruction = ""
   try {
     const response = await fetch(endpoint, {
       method: 'POST',
