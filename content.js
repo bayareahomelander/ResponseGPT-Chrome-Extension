@@ -1,5 +1,5 @@
 // Define API key and endpoint -> text-davinci-003
-const apiKey = '';
+const apiKey = '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';
 const endpoint = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
 
 // Email Received and Sample Response text area
@@ -18,13 +18,13 @@ async function analyzeText(text) {
     return 'Input Field is Empty'
   }
   
-  const prompt = "Write a short sentiment analysis on the given text, analyze the emotion and tone underneath, and identify what type of text it might be, such as a Tweet: ";
+  const prompt = "Write a short sentiment analysis on the given text in the same language, analyze the emotion and tone underneath. If the text is in English, identify what type of text it might be, such as a Tweet: ";
   const promtpWithEmail = prompt + text;
   try {
     const response = await fetch(endpoint, {
       method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json; charset=utf-8",
         "Authorization": `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
@@ -67,7 +67,7 @@ async function generateResponse(textareaId, temperature) {
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json; charset=uft-8',
           'Authorization': `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
@@ -114,13 +114,13 @@ conservativeButton.addEventListener("click", function() {
 
 // Define function for commenting button
 async function generateComment(inputText) {
-  const instruction = 'Give insights on the text: '
+  const instruction = 'Give your opinion based on the given text, in the same language: '
 
   try {
     const response = await fetch(endpoint, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json; charset=uft-8',
         'Authorization': `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
