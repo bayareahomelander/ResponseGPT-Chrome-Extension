@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "ResponseGPT",
+  "version": "0.9.0",
+  "description": "Auto generates response on any given text!",
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "ResponseGPT",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ]
+}

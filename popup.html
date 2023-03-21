@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ResponseGPT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <h1>ResponseGPT</h1>
+    <div style="display: flex; align-items: center; justify-content: center;">
+      <textarea id="external-input" name="external-input" placeholder="Copy and Paste or Enter Target Text Here"></textarea><br>
+      <textarea id="sample-response" name="sample-response" placeholder="Example Response Will Show Up Here" readonly></textarea><br>
+    </div>
+
+    <button id="generate-button">
+      <span class="button-text">Generate Response</span>
+      <i class="fa-solid fa-reply fa-rotate-180" style="display: none;"></i>
+    </button>
+
+    <button id="comment-button">
+      <span class="button-text">Generate Comment</span>
+      <i class="fa-regular fa-comment" style="display: none;"></i>
+    </button>
+    <button id="positive-button">
+      <span class="button-text">Creative Response</span>
+      <i class="fa-regular fa-lightbulb" style="display: none;"></i>
+    </button>
+    <button id="conservative-button">
+      <span class="button-text">Neutral Response</span>
+      <i class="fa-regular fa-face-meh-blank" style="display: none;"></i>
+    </button>
+
+    <script src="content.js"></script>
+  </body>
+</html>
